@@ -5,7 +5,6 @@ class macvim {
     'Darwin': {
       package { 'macvim':
         ensure          => installed,
-        provider        => 'homebrew',
         install_options => [
           '--with-cscope',
           '--override-system-vim',
